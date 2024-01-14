@@ -93,7 +93,7 @@ contract WorthTokenSale is ReentrancyGuard, Context, Ownable {
                 uint256 _maxContribution,uint256 _hardCap,
                 uint256 _claimDate, address _usdtAddr,
                 address _busdAddr, uint256 _tokenPriceUsd) nonZeroAddress(_tokenAddr) nonZeroAddress(_usdtAddr) nonZeroAddress(_busdAddr){
-        tokenAddr = _tokenAddr;
+        tokenAddr = _tokenAddr; 0x4bf0683870B58a14359A29704d989852Cc02D5FB
         minContribution = _minContribution.mul(10 ** uint256(tokenDecimal));
         maxContribution = _maxContribution.mul(10 ** uint256(tokenDecimal));
         hardCap = _hardCap.mul(10 ** uint256(tokenDecimal));
